@@ -107,7 +107,7 @@ Then navigate to `http://localhost:3000` in your browser.
 ## 🛠️ Customization Guide
 
 1. **Change WhatsApp Phone Number**:
-   - In `js/app.js` and `index.html`, replace `260977000000` with Faith's actual Zambian WhatsApp number (e.g., `26097xxxxxxx`).
+   - In `js/app.js` and `index.html`, replace `26772170936` with an actual  WhatsApp number (e.g., `26097xxxxxxx`).
 
 2. **Add Products**:
    - Open the web app and click **Dealer Portal** in the top navigation, navigate to **+ Add New Furniture**, fill out the details and click Publish!
