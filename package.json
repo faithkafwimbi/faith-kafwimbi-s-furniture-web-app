@@ -1,0 +1,21 @@
+{
+  "name": "faith Kafwimbi's-furniture-web-app",
+  "version": "1.0.0",
+  "description": "Professional Web App for Faith Kafwimbi's Furniture General Dealers - Handcrafted Hardwood, Executive Suites & Bespoke Joinery",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "furniture",
+    "ecommerce",
+    "dealership",
+    "zambia",
+    "hardwood",
+    "mukwa",
+    "ui-ux"
+  ],
+  "author": "Faith Kafwimbi's Furniture General Dealers Ltd",
+  "license": "MIT"
+}

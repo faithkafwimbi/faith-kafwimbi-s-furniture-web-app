@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faith's Furniture General Dealers | Handcrafted Hardwood & Luxury Living</title>
+  <meta name="description" content="Faith's Furniture General Dealers - Premier handcrafted Zambian Mukwa & Mahogany furniture, executive office suites, living room sets, dining tables, and bespoke woodwork.">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="top-bar" aria-label="Announcement Bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span class="announcement-badge">Showroom Special</span>
+        <span>✨ Free Delivery on orders over K15,000 | Lusaka, Copperbelt & Nationwide</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+260772170936" class="top-bar-link">
+          <i data-lucide="phone" style="width: 14px; height: 14px;"></i>
+          <span>+260772170936</span>
+        </a>
+        <div class="currency-selector-wrapper">
+          <label for="currencySelect" style="font-size: 0.72rem; color: #b5a99c;">CURRENCY:</label>
+          <select id="currencySelect" class="currency-select" aria-label="Select Currency">
+            <option value="ZMW" selected>ZMW (K)</option>
+            <option value="USD">USD ($)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Luxury Header -->
+  <header class="main-header" id="mainHeader">
+    <div class="container header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Faith's Furniture Home">
+        <div class="brand-emblem">
+          <i data-lucide="armchair" style="width: 24px; height: 24px;"></i>
+        </div>
+        <div class="brand-text">
+          <h1>FAITH KAFWIMBI'S FURNITURE</h1>
+          <span>GENERAL DEALERS LTD</span>
+        </div>
+      </a>
+
+      <!-- Search Input Container -->
+      <div class="search-container">
+        <div class="search-input-wrapper">
+          <i data-lucide="search" class="search-icon" style="width: 18px; height: 18px;"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search sofas, Mukwa tables, executive desks, beds...">
+          <button id="searchClearBtn" class="search-clear-btn" title="Clear search">
+            <i data-lucide="x" style="width: 16px; height: 16px;"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#catalog" class="nav-link active">Catalog</a></li>
+          <li><a href="#roomShowcase" class="nav-link">Room Visualizer</a></li>
+          <li><a href="#bespoke" class="nav-link">Custom Woodwork</a></li>
+          <li><a href="#reviews" class="nav-link">Testimonials</a></li>
+          <li><a href="#contact" class="nav-link">Showroom</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <!-- Wishlist Button -->
+        <button class="action-btn" title="Wishlist" onclick="alert('Viewing wishlist items in catalog highlight mode')">
+          <i data-lucide="heart" style="width: 20px; height: 20px;"></i>
+          <span id="wishlistBadge" class="badge-count">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button class="action-btn open-cart-btn" title="Shopping Cart">
+          <i data-lucide="shopping-bag" style="width: 20px; height: 20px;"></i>
+          <span id="cartBadge" class="badge-count">0</span>
+        </button>
+
+        <!-- Dealer Admin Portal Button -->
+        <button id="adminToggleBtn" class="admin-toggle-btn" title="Dealer Staff Inventory Portal">
+          <i data-lucide="shield-check" style="width: 15px; height: 15px;"></i>
+          <span>Dealer Portal</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-pattern-overlay"></div>
+    <div class="container hero-grid">
+      
+      <!-- Hero Left Text -->
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <i data-lucide="award" style="width: 14px; height: 14px;"></i>
+          <span>Authentic Zambian Hardwood General Dealers</span>
+        </div>
+        <h1 class="hero-title">
+          Handcrafted Elegance for <span>Modern Living</span> & Workspaces
+        </h1>
+        <p class="hero-description">
+          Faith's Furniture General Dealers blends time-honored artisanal joinery with contemporary prestige. Solid Mukwa, African Mahogany, and bespoke commercial interior fittings crafted to last for generations.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#catalog" class="btn-primary">
+            <i data-lucide="layout-grid" style="width: 18px; height: 18px;"></i>
+            <span>Explore Collection</span>
+          </a>
+          <a href="#bespoke" class="btn-secondary">
+            <i data-lucide="ruler" style="width: 18px; height: 18px;"></i>
+            <span>Request Custom Order</span>
+          </a>
+          <a href="https://wa.me/+260772170936/+260961181713?text=Hello%20Faith's%20Furniture!%20I%20would%20like%20to%20inquire%20about%20your%20showroom%20furniture." 
+             target="_blank" 
+             class="btn-whatsapp">
+            <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3>100%</h3>
+            <p>Solid Mukwa & Hardwood</p>
+          </div>
+          <div class="stat-item">
+            <h3>5,000+</h3>
+            <p>Happy Homes & Offices</p>
+          </div>
+          <div class="stat-item">
+            <h3>10 Yrs</h3>
+            <p>Structural Warranty</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Right Image Showcase -->
+      <div class="hero-showcase">
+        <div class="hero-image-card">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=80" alt="Faith Kafwimbi's Furniture Living Room Showcase">
+          
+          <div class="floating-guarantee-badge">
+            <div class="badge-icon-gold">
+              <i data-lucide="shield" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div class="badge-text">
+              <strong>Quality Assured Guarantee</strong>
+              <span>Kiln-dried timber, termite-shielded & master upholstery.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Trust Pillars Strip -->
+  <section class="trust-strip">
+    <div class="container trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <i data-lucide="trees" style="width: 20px; height: 20px;"></i>
+        </div>
+        <div>
+          <h4>Solid Mukwa Hardwood</h4>
+          <p>Sustainably harvested Zambian timber</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <i data-lucide="truck" style="width: 20px; height: 20px;"></i>
+        </div>
+        <div>
+          <h4>Showroom White-Glove Delivery</h4>
+          <p>Carefully dispatched & assembled in your room</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <i data-lucide="credit-card" style="width: 20px; height: 20px;"></i>
+        </div>
+        <div>
+          <h4>Flexible Payment Terms</h4>
+          <p>Mobile Money, Lay-by, Bank EFT & COD</p>
+        </div>
+      </div>
+
+      <div class="trust-item">
+        <div class="trust-icon-box">
+          <i data-lucide="compass" style="width: 20px; height: 20px;"></i>
+        </div>
+        <div>
+          <h4>Bespoke Carpentry Services</h4>
+          <p>Custom dimensions, fabrics & finishes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog Section with Live Filters -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Curated Collections</span>
+        <h2 class="section-title">Discover Exceptional Craftsmanship</h2>
+        <p class="section-subtitle">
+          From deep button-tufted velvet sofas to regal 8-seater dining suites and executive boardroom desks.
+        </p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="catalog-filter-bar">
+        <!-- Category Tabs -->
+        <div class="category-tabs" id="categoryTabs">
+          <button class="category-tab-btn active" data-category="all">All Showroom Items</button>
+          <button class="category-tab-btn" data-category="living">Living Room</button>
+          <button class="category-tab-btn" data-category="dining">Dining & Kitchen</button>
+          <button class="category-tab-btn" data-category="bedroom">Bedroom Suites</button>
+          <button class="category-tab-btn" data-category="office">Executive Office</button>
+          <button class="category-tab-btn" data-category="outdoor">Outdoor & Patio</button>
+        </div>
+
+        <!-- Filter Controls Row -->
+        <div class="filter-controls-row">
+          <div class="filter-group-left">
+            
+            <!-- Price Slider -->
+            <div class="price-slider-wrapper">
+              <label for="priceRange">Max Budget:</label>
+              <input type="range" id="priceRange" class="price-slider" min="3000" max="30000" step="500" value="30000">
+              <span id="priceRangeVal" class="price-slider-val">K 30,000</span>
+            </div>
+
+            <!-- In Stock Toggle -->
+            <label class="toggle-stock-wrapper">
+              <span class="toggle-switch">
+                <input type="checkbox" id="inStockToggle">
+                <span class="slider-switch"></span>
+              </span>
+              <span>In Stock Only</span>
+            </label>
+
+          </div>
+
+          <div class="filter-group-right">
+            <!-- Sort dropdown -->
+            <select id="sortSelect" class="sort-select" aria-label="Sort Furniture Items">
+              <option value="featured">Sort: Featured Collection</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+              <option value="newest">New Arrivals</option>
+            </select>
+
+            <span id="resultsCount" class="results-count">Showing 12 items</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Room Visualizer / Hotspot Showcase -->
+  <section class="room-showcase-section" id="roomShowcase">
+    <div class="container">
+      <div class="section-header" style="color: #ffffff;">
+        <span class="section-tag" style="color: var(--gold-400);">Interactive Experience</span>
+        <h2 class="section-title" style="color: #ffffff;">The Grand Living Pavilion</h2>
+        <p class="section-subtitle" style="color: #cfc5b6;">
+          Hover or tap the glowing gold pins on the room setting to inspect matching furniture pieces and order them directly.
+        </p>
+      </div>
+
+      <div class="room-hotspot-container" id="roomHotspotContainer">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Bespoke / Custom Furniture Order Calculator -->
+  <section class="bespoke-section" id="bespoke">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Made-To-Measure</span>
+        <h2 class="section-title">Bespoke Carpentry & Custom Orders</h2>
+        <p class="section-subtitle">
+          Have a specific dimension, custom wood stain, or reference design from architectural blueprints? Calculate your estimate and request a formal dealer quote.
+        </p>
+      </div>
+
+      <div class="bespoke-card">
+        <!-- Left: Options Builder -->
+        <div class="bespoke-form-side">
+          <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--wood-900);">
+            Custom Design Specifier
+          </h3>
+          <p style="color: var(--text-secondary); font-size: 0.875rem;">
+            Select your preferences below to receive an instant workshop cost approximation.
+          </p>
+
+          <div class="bespoke-form-grid">
+            <div class="form-group">
+              <label for="bespokeType">Furniture Type</label>
+              <select id="bespokeType" class="form-control">
+                <option value="sofa">Custom Living Room Sofa Suite</option>
+                <option value="dining">Hardwood Dining Table & Chairs</option>
+                <option value="bed">Custom Storage Bed with Headboard</option>
+                <option value="wardrobe">Fitted Master Wardrobe</option>
+                <option value="desk">Executive Director Desk</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bespokeDimensions">Size & Dimensions</label>
+              <select id="bespokeDimensions" class="form-control">
+                <option value="standard">Standard Dimensions</option>
+                <option value="large">Large / Extended (8-10 Seater or King+)</option>
+                <option value="xl">Extra Large / Commercial Corporate Spec</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bespokeWood">Timber Material</label>
+              <select id="bespokeWood" class="form-control">
+                <option value="mukwa">Solid Zambian Mukwa (Premium Grade)</option>
+                <option value="mahogany">Solid African Mahogany</option>
+                <option value="oak">White Oak / Imported Hardwood</option>
+                <option value="pine">Treated Seasoned Pine (Economy)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="bespokeFabric">Upholstery & Fabric</label>
+              <select id="bespokeFabric" class="form-control">
+                <option value="velvet">Luxury Stain-Resistant Velvet</option>
+                <option value="leather">Genuine Top-Grain Italian Leather</option>
+                <option value="linen">Heavy Belgian Linen</option>
+                <option value="boucle">Textured Bouclé</option>
+                <option value="none">No Upholstery (Pure Solid Wood)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label for="bespokeFinish">Surface Staining & Treatment</label>
+              <select id="bespokeFinish" class="form-control">
+                <option value="natural">Natural Satin Polyurethane (Showcases Wood Ribbons)</option>
+                <option value="walnut">Deep Rich Walnut Stain (Dark Luxury)</option>
+                <option value="gloss">High-Gloss Mirror Lacquer</option>
+                <option value="matte">Matte Organic Botanical Wax</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Estimate Receipt Preview -->
+        <div class="bespoke-preview-side">
+          <div>
+            <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--gold-400); margin-bottom: 0.5rem;">
+              <i data-lucide="calculator" style="width: 20px; height: 20px;"></i>
+              <span style="font-weight: 700; text-transform: uppercase; letter-spacing: 1px; font-size: 0.8rem;">Workshop Estimation</span>
+            </div>
+            <h4 style="font-family: var(--font-serif); font-size: 1.4rem;">Faith's Carpentry Quotation</h4>
+            <p style="color: #a89f92; font-size: 0.85rem;">
+              Calculated based on real-time timber board feet, artisanal joinery hours, and high-durability hardware.
+            </p>
+
+            <div class="preview-receipt-box">
+              <div class="preview-line">
+                <span>Base Framework & Timber:</span>
+                <span>Included</span>
+              </div>
+              <div class="preview-line">
+                <span>Joinery & Sanding:</span>
+                <span>Included</span>
+              </div>
+              <div class="preview-line">
+                <span>Multi-Coat Finish:</span>
+                <span>Included</span>
+              </div>
+              <div class="preview-line">
+                <span>10-Year Timber Guarantee:</span>
+                <span style="color: var(--gold-400); font-weight: 700;">Complimentary</span>
+              </div>
+              <div class="preview-line total">
+                <span>Estimated Total:</span>
+                <span id="bespokeEstPrice">K 11,250</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem;">
+            <button id="btnBespokeWhatsApp" class="btn-whatsapp" style="width: 100%; justify-content: center; font-size: 1rem; padding: 0.9rem;">
+              <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+              <span>Send Custom Spec via WhatsApp</span>
+            </button>
+            <p style="text-align: center; color: #a89f92; font-size: 0.75rem; margin-top: 0.6rem;">
+              Direct connection to our head workshop carpenter & dealer manager.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Satisfaction</span>
+        <h2 class="section-title">Trusted By Homeowners & Executives</h2>
+        <p class="section-subtitle">
+          Discover why discerning families and corporate institutions choose Faith Kafwimbi's Furniture General Dealers.
+        </p>
+      </div>
+
+      <div class="reviews-grid" id="testimonialsGrid">
+        <!-- Rendered via JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Showroom Location & Contact -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-grid">
+      
+      <!-- Showroom Info -->
+      <div class="contact-info-card">
+        <span class="section-tag" style="color: var(--gold-400);">Visit Our Showroom</span>
+        <h2 style="font-family: var(--font-serif); font-size: 2rem; color: #fff; margin-bottom: 1.5rem;">
+          Faith's Furniture General Dealers
+        </h2>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i data-lucide="map-pin" style="width: 20px; height: 20px;"></i>
+          </div>
+          <div class="info-text">
+            <h4>Showroom & Workshop Address</h4>
+            <p>Plot 1042, Great East Road (Near Arcades Commercial Junction)<br>Lusaka, Zambia</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i data-lucide="clock" style="width: 20px; height: 20px;"></i>
+          </div>
+          <div class="info-text">
+            <h4>Showroom Hours</h4>
+            <p>Monday - Friday: 08:00 AM - 17:30 PM<br>Saturday: 08:30 AM - 15:00 PM<br>Sunday: By Appointment</p>
+          </div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-icon">
+            <i data-lucide="phone-call" style="width: 20px; height: 20px;"></i>
+          </div>
+          <div class="info-text">
+            <h4>Direct Lines & WhatsApp</h4>
+            <p>Sales: +260772170936<br>Workshop & Bespoke: +260961181713<br>Email: sales@faithsfurniture.zm</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/260772170936?text=Hello%20Faith kafwimbi's%20Furniture!%20I%20would%20like%20to%20book%20a%20showroom%20visit." 
+           target="_blank" 
+           class="btn-whatsapp" 
+           style="margin-top: 1rem;">
+          <i data-lucide="message-circle" style="width: 18px; height: 18px;"></i>
+          <span>Schedule Showroom Consultation</span>
+        </a>
+      </div>
+
+      <!-- Quick Message Form -->
+      <div class="contact-form-card">
+        <h3 style="font-family: var(--font-serif); font-size: 1.5rem; color: var(--wood-900); margin-bottom: 0.5rem;">
+          Send Dealer Inquiry
+        </h3>
+        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1.5rem;">
+          Have questions regarding installment lay-by, bulk corporate tenders, or custom pieces?
+        </p>
+
+        <form onsubmit="event.preventDefault(); showToast('Thank you! Your message has been sent to our dealer team.'); this.reset();">
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="contactName">Your Full Name</label>
+            <input type="text" id="contactName" class="form-control" placeholder="e.g. Kelvin Mwanza" required>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="contactPhone">Phone / WhatsApp Number</label>
+            <input type="tel" id="contactPhone" class="form-control" placeholder="e.g. +260772170936" required>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1rem;">
+            <label for="contactInterest">Item of Interest</label>
+            <select id="contactInterest" class="form-control">
+              <option value="living">Living Room Chesterfield Suite</option>
+              <option value="dining">Monarch 8-Seater Mukwa Dining Set</option>
+              <option value="bedroom">Sovereign King Hydraulic Bed</option>
+              <option value="office">Executive Office & Boardroom Setup</option>
+              <option value="general">General Dealership & Supplies Inquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 1.5rem;">
+            <label for="contactMessage">Inquiry Details</label>
+            <textarea id="contactMessage" class="form-control" rows="4" placeholder="Mention any specific dimensions, delivery town, or questions..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+            <i data-lucide="send" style="width: 18px; height: 18px;"></i>
+            <span>Submit Inquiry</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 1rem;">
+            <div class="brand-emblem">
+              <i data-lucide="armchair" style="width: 22px; height: 22px;"></i>
+            </div>
+            <div class="brand-text">
+              <h3 style="font-family: var(--font-serif); font-size: 1.2rem; color: #fff;">FAITH'S FURNITURE</h3>
+              <span style="color: var(--gold-400);">GENERAL DEALERS LTD</span>
+            </div>
+          </div>
+          <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 1.25rem;">
+            Registered Zambian General Dealer specializing in authentic kiln-dried Mukwa timber, luxury residential suites, executive office solutions, and custom joinery.
+          </p>
+          <div style="font-size: 0.8rem; color: #9f9689;">
+            PACRA Reg: 1202300000 | TPIN: 1002345678
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Showroom Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog">Living Room Sofas</a></li>
+            <li><a href="#catalog">Solid Mukwa Dining</a></li>
+            <li><a href="#catalog">Orthopedic Beds</a></li>
+            <li><a href="#catalog">Executive Office Desks</a></li>
+            <li><a href="#catalog">Outdoor Patio Lounges</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Dealer Services</h4>
+          <ul class="footer-links">
+            <li><a href="#bespoke">Bespoke Workshop Orders</a></li>
+            <li><a href="#contact">Corporate Office Outfitting</a></li>
+            <li><a href="#contact">Showroom Delivery & Setup</a></li>
+            <li><a href="#contact">Lay-By Installment Plans</a></li>
+            <li><a href="#contact">Timber Warranty Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Accepted Payments</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 1rem;">
+            Airtel Money, MTN Mobile Money, Zamtel, Direct Bank EFT, Visa/Mastercard & Cash upon Showroom Verification.
+          </p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <span style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; color: #fff;">MTN MoMo</span>
+            <span style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; color: #fff;">Airtel Money</span>
+            <span style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; color: #fff;">Bank EFT</span>
+            <span style="background: rgba(255,255,255,0.1); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; color: #fff;">Visa/Mastercard</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Faith Kafwimbi's Furniture General Dealers Ltd. All rights reserved.
+        </div>
+        <div>
+          Handcrafted with precision & pride in Zambia.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & DRAWERS
+       ========================================================================== -->
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewModal" aria-modal="true" role="dialog">
+    <div class="modal-card">
+      <button class="modal-close-btn" title="Close modal">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+      <div id="quickViewContainer">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Cart Slide-Over Drawer -->
+  <div class="cart-drawer-overlay" id="cartDrawerOverlay">
+    <div class="cart-drawer" id="cartDrawer">
+      
+      <div class="cart-header">
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <i data-lucide="shopping-bag" style="width: 20px; height: 20px; color: var(--wood-900);"></i>
+          <h3>Showroom Cart</h3>
+        </div>
+        <button id="closeCartBtn" class="modal-close-btn" style="position: static; width: 32px; height: 32px;" title="Close cart">
+          <i data-lucide="x" style="width: 18px; height: 18px;"></i>
+        </button>
+      </div>
+
+      <!-- Free Delivery Progress Tracker -->
+      <div class="free-delivery-bar">
+        <div class="free-delivery-text" id="deliveryProgressText">
+          Add <strong>K 2,500</strong> more to qualify for <strong>FREE Showroom Delivery</strong>!
+        </div>
+        <div class="progress-track">
+          <div class="progress-fill" id="deliveryProgressFill" style="width: 50%;"></div>
+        </div>
+      </div>
+
+      <!-- Cart Items Scroll List -->
+      <div class="cart-items-list" id="cartItemsList">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Cart Footer & Checkout -->
+      <div class="cart-footer">
+        <!-- Promo Voucher Form -->
+        <div class="voucher-form">
+          <input type="text" id="voucherInput" class="voucher-input" placeholder="Promo code (e.g. FAITH10)">
+          <button id="btnApplyVoucher" class="btn-apply-voucher">Apply</button>
+        </div>
+
+        <div class="cart-summary-line">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">K 0</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Promotional Discount</span>
+          <span id="cartDiscount" style="color: var(--status-success);">K 0</span>
+        </div>
+        <div class="cart-summary-line">
+          <span>Showroom Delivery</span>
+          <span id="cartDelivery">Free</span>
+        </div>
+        <div class="cart-summary-line total">
+          <span>Total</span>
+          <span id="cartTotal">K 0</span>
+        </div>
+
+        <button class="btn-primary" onclick="openCheckoutModal()" style="width: 100%; justify-content: center; margin-top: 1rem; padding: 0.9rem;">
+          <i data-lucide="lock" style="width: 18px; height: 18px;"></i>
+          <span>Proceed to Checkout</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Multi-Step Checkout Modal -->
+  <div class="modal-overlay" id="checkoutModal" aria-modal="true" role="dialog">
+    <div class="modal-card" style="max-width: 620px; padding: 2.25rem;">
+      <button class="modal-close-btn" title="Close checkout">
+        <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+      </button>
+
+      <div style="text-align: center; margin-bottom: 1.5rem;">
+        <span class="section-tag">Direct Dealer Checkout</span>
+        <h3 style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--wood-900);">Complete Your Order</h3>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">
+          Provide delivery instructions below. Orders are verified by showroom staff and synced via WhatsApp.
+        </p>
+      </div>
+
+      <div id="checkoutSummary">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <form id="checkoutForm">
+        <div class="bespoke-form-grid" style="margin-top: 0; margin-bottom: 1rem;">
+          <div class="form-group">
+            <label for="checkoutName">Full Name *</label>
+            <input type="text" id="checkoutName" class="form-control" placeholder="e.g. Chileshe Bwalya" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutPhone">Phone / WhatsApp Number *</label>
+            <input type="tel" id="checkoutPhone" class="form-control" placeholder="e.g. +260 977 123456" required>
+          </div>
+          <div class="form-group">
+            <label for="checkoutCity">Town / City *</label>
+            <select id="checkoutCity" class="form-control">
+              <option value="Lusaka">Lusaka</option>
+              <option value="Ndola">Ndola</option>
+              <option value="Kitwe">Kitwe</option>
+              <option value="Livingstone">Livingstone</option>
+              <option value="Kabwe">Kabwe</option>
+              <option value="Solwezi">Solwezi</option>
+              <option value="Kasama">Kasama</option>
+              <option value="Other">Other Nationwide Location</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="checkoutAddress">Street / Plot Address *</label>
+            <input type="text" id="checkoutAddress" class="form-control" placeholder="Plot / Street / Area" required>
+          </div>
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label style="margin-bottom: 0.5rem;">Select Payment Method</label>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
+            <label style="display: flex; align-items: center; gap: 0.5rem; background: var(--cream-100); padding: 0.65rem 0.85rem; border-radius: var(--radius-md); font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="paymentMethod" value="Mobile Money (MTN/Airtel/Zamtel)" checked>
+              <span>Mobile Money (MoMo)</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; background: var(--cream-100); padding: 0.65rem 0.85rem; border-radius: var(--radius-md); font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="paymentMethod" value="Cash on Showroom Pickup / Delivery">
+              <span>Cash / COD</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; background: var(--cream-100); padding: 0.65rem 0.85rem; border-radius: var(--radius-md); font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="paymentMethod" value="Bank EFT / Wire Transfer">
+              <span>Bank Wire / EFT</span>
+            </label>
+            <label style="display: flex; align-items: center; gap: 0.5rem; background: var(--cream-100); padding: 0.65rem 0.85rem; border-radius: var(--radius-md); font-size: 0.85rem; cursor: pointer;">
+              <input type="radio" name="paymentMethod" value="Visa / Mastercard">
+              <span>Card (Visa/Mastercard)</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-whatsapp" style="width: 100%; justify-content: center; padding: 0.95rem; font-size: 1rem;">
+          <i data-lucide="check-circle" style="width: 20px; height: 20px;"></i>
+          <span>Confirm & Order via WhatsApp</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Dealer Admin Management Dashboard Modal -->
+  <div class="modal-overlay" id="adminModal" aria-modal="true" role="dialog">
+    <div class="modal-card admin-card">
+      <div class="admin-header">
+        <div style="display: flex; align-items: center; gap: 0.75rem;">
+          <div class="brand-emblem" style="width: 36px; height: 36px;">
+            <i data-lucide="shield-check" style="width: 20px; height: 20px;"></i>
+          </div>
+          <div>
+            <h3 style="font-family: var(--font-serif); font-size: 1.25rem;">Faith's Furniture Dealer Portal</h3>
+            <span style="font-size: 0.75rem; color: var(--gold-400);">Staff Inventory & Order Management System</span>
+          </div>
+        </div>
+        <button id="closeAdminBtn" class="modal-close-btn" style="position: static; color: #fff; background: rgba(255,255,255,0.15);" title="Close portal">
+          <i data-lucide="x" style="width: 18px; height: 18px;"></i>
+        </button>
+      </div>
+
+      <!-- Stats Grid -->
+      <div class="admin-stats-grid">
+        <div class="stat-box">
+          <h6>Catalog Products</h6>
+          <div class="stat-val" id="statTotalProducts">12</div>
+        </div>
+        <div class="stat-box">
+          <h6>Showroom Asset Value</h6>
+          <div class="stat-val" id="statInventoryVal">K 240,000</div>
+        </div>
+        <div class="stat-box">
+          <h6>Low Stock Warnings</h6>
+          <div class="stat-val" id="statLowStock" style="color: var(--status-danger);">2</div>
+        </div>
+        <div class="stat-box">
+          <h6>Orders Processed</h6>
+          <div class="stat-val" id="statTotalOrders" style="color: var(--status-success);">0</div>
+        </div>
+      </div>
+
+      <!-- Admin Tab Navigation -->
+      <div class="admin-tabs">
+        <button class="admin-tab-btn active" data-tab="inventory">Live Showroom Inventory</button>
+        <button class="admin-tab-btn" data-tab="add-product">+ Add New Furniture</button>
+        <button class="admin-tab-btn" data-tab="orders">Customer Orders Log</button>
+        <button class="admin-tab-btn" onclick="DealerAdmin.resetDefaults()" style="margin-left: auto; color: #b91c1c;">Reset Default Catalog</button>
+      </div>
+
+      <!-- Admin Tab Bodies -->
+      <div class="admin-body">
+        
+        <!-- Tab 1: Inventory Table -->
+        <div id="adminInventoryView">
+          <div class="inventory-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Product Details</th>
+                  <th>Category</th>
+                  <th>Price</th>
+                  <th>Stock Qty</th>
+                  <th>Status</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminInventoryTbody">
+                <!-- Injected via admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Add Product Form -->
+        <div id="adminAddProductView" style="display: none;">
+          <form id="addProductForm">
+            <div class="bespoke-form-grid" style="margin-top: 0;">
+              <div class="form-group">
+                <label for="newProdName">Product Name *</label>
+                <input type="text" id="newProdName" class="form-control" placeholder="e.g. Copperbelt Mukwa Coffee Table" required>
+              </div>
+              <div class="form-group">
+                <label for="newProdCategory">Showroom Category *</label>
+                <select id="newProdCategory" class="form-control">
+                  <option value="living">Living Room</option>
+                  <option value="dining">Dining & Kitchen</option>
+                  <option value="bedroom">Bedroom</option>
+                  <option value="office">Executive Office</option>
+                  <option value="outdoor">Outdoor & Patio</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="newProdPrice">Price (ZMW) *</label>
+                <input type="number" id="newProdPrice" class="form-control" placeholder="e.g. 14500" required>
+              </div>
+              <div class="form-group">
+                <label for="newProdStock">Stock Quantity *</label>
+                <input type="number" id="newProdStock" class="form-control" placeholder="e.g. 5" value="5" required>
+              </div>
+              <div class="form-group">
+                <label for="newProdMaterial">Material & Timber *</label>
+                <input type="text" id="newProdMaterial" class="form-control" placeholder="e.g. Solid Zambian Mukwa & Velvet" required>
+              </div>
+              <div class="form-group">
+                <label for="newProdImage">Image URL (Unsplash or Direct Link)</label>
+                <input type="url" id="newProdImage" class="form-control" placeholder="https://images.unsplash.com/...">
+              </div>
+              <div class="form-group" style="grid-column: 1 / -1;">
+                <label for="newProdDesc">Description & Craftsmanship Details</label>
+                <textarea id="newProdDesc" class="form-control" rows="3" placeholder="Describe the timber, finish, joinery and design characteristics..."></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn-primary" style="margin-top: 1.5rem;">
+              <i data-lucide="plus-circle" style="width: 18px; height: 18px;"></i>
+              <span>Publish Product to Live Showroom</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Tab 3: Orders Log -->
+        <div id="adminOrdersView" style="display: none;">
+          <div class="inventory-table-wrapper">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Order #</th>
+                  <th>Date</th>
+                  <th>Customer Info</th>
+                  <th>Items</th>
+                  <th>Total Amount</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="adminOrdersTbody">
+                <!-- Injected via admin.js -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <nav class="mobile-bottom-bar" aria-label="Mobile Bottom Bar">
+    <a href="#catalog" class="mobile-bar-item active">
+      <i data-lucide="layout-grid" style="width: 20px; height: 20px;"></i>
+      <span>Catalog</span>
+    </a>
+    <a href="#bespoke" class="mobile-bar-item">
+      <i data-lucide="ruler" style="width: 20px; height: 20px;"></i>
+      <span>Bespoke</span>
+    </a>
+    <a href="https://wa.me/260772170936" target="_blank" class="mobile-bar-item" style="color: #25d366;">
+      <i data-lucide="message-circle" style="width: 20px; height: 20px;"></i>
+      <span>WhatsApp</span>
+    </a>
+    <button class="mobile-bar-item open-cart-btn" style="border: none; background: none;">
+      <i data-lucide="shopping-bag" style="width: 20px; height: 20px;"></i>
+      <span>Cart</span>
+      <span id="mobileCartBadge" class="badge-count" style="top: -6px; right: 2px;">0</span>
+    </button>
+  </nav>
+
+  <!-- Floating Direct WhatsApp Button -->
+  <a href="https://wa.me/260772170936?text=Hello%20Faith's%20Furniture!%20I%20am%20browsing%20your%20showroom%20and%20need%20assistance." 
+     target="_blank" 
+     class="floating-whatsapp-btn" 
+     title="Chat with Faith Kafwimbi's Furniture Dealer Team">
+    <i data-lucide="message-circle" style="width: 28px; height: 28px;"></i>
+  </a>
+
+  <!-- Application Scripts -->
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/admin.js"></script>
+
+</body>
+</html>
